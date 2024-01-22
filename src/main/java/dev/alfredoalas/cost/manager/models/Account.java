@@ -32,14 +32,14 @@ public class Account implements Serializable {
     private Double initialAccountBalance;
 
     @Basic(optional = false)
-    @Column(name = "initial_account_date")
+    @Column(name = "initial_balance_date")
     private LocalDate intialAccountDate;
 
     @Basic(optional = false)
     @Column(name = "balance")
     private Boolean isBalance;
 
-    @JoinColumn(name = "idCurrency", referencedColumnName = "id_currency", foreignKey = @ForeignKey(name = "FK_accounts_currencies"))
+    @JoinColumn(name = "id_currency", referencedColumnName = "id_currency", foreignKey = @ForeignKey(name = "FK_accounts_currencies"))
     @ManyToOne(optional = false, targetEntity = Currency.class)
     private Currency idCurrency;
 

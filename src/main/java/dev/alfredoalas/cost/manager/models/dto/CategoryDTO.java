@@ -1,13 +1,12 @@
 package dev.alfredoalas.cost.manager.models.dto;
 
-import dev.alfredoalas.cost.manager.models.CategoryIcon;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -17,10 +16,10 @@ public class CategoryDTO {
 
     private int idCategory;
 
-    @NotBlank(message = "The category cannot be left empty.")
+    @Pattern(regexp = "^[a-zA-ZáéíóúÁÉÍÓÚ ]{1,40}$", message = "The category name must contain a maximum of 40 alphabetical characters.")
     private String nameCategory;
 
     @NotNull(message = "The category cannot be left without an icon.")
-    private CategoryIcon idCategoryIcon;
+    private CategoryIconDTO idCategoryIcon;
 
 }

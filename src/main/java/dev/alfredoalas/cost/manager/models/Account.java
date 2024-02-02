@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.time.LocalDate;
 
 @Entity
@@ -29,7 +30,7 @@ public class Account implements Serializable {
 
     @Basic(optional = false)
     @Column(name = "initial_account_balance")
-    private Double initialAccountBalance;
+    private BigDecimal initialAccountBalance;
 
     @Basic(optional = false)
     @Column(name = "initial_balance_date")

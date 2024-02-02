@@ -14,13 +14,13 @@ import java.io.Serializable;
 @NoArgsConstructor
 @Getter
 @Setter
-public class CategoryIcons implements Serializable {
+public class CategoryIcon implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(optional = false)
     @Column(name = "id_category_icon")
-    private int idAccount;
+    private int idCategoryIcon;
 
     @Basic(optional = false)
     @Column(name = "category_icon")

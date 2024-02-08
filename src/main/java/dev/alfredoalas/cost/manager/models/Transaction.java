@@ -22,7 +22,7 @@ public class Transaction implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(optional = false)
     @Column(name = "id_transaction")
-    private int idTransaction;
+    private Long idTransaction;
 
     @Basic(optional = false)
     @Column(name = "date_transaction")

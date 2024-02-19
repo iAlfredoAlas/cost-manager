@@ -1,5 +1,5 @@
 package dev.alfredoalas.cost.manager.models;
-/**
+/*
  * Represents a category for classifying financial transactions.
  * @author Alfredo Alas
  */

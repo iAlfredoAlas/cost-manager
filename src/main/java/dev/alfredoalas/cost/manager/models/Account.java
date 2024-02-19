@@ -1,5 +1,5 @@
 package dev.alfredoalas.cost.manager.models;
-/**
+/*
  * Represents a financial account used for tracking income and expenses.
  * @autor Alfredo Alas
  */
